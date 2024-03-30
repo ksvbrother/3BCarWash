@@ -1,0 +1,29 @@
+.bookBtn {
+    background-color: #141414;
+    border-radius: 30px;
+    width: 245px;
+}
+
+.buttonImage {
+    width: 40px;
+    height: 40px;
+    background: var( --secondary-color);
+    border-radius: 30px;
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    transition: left 0.4s linear;
+}
+
+.linkBtn {
+    margin-left: 38px;
+    transition: all 0.4s linear;
+}
+
+.bookBtn:hover .buttonImage {
+    left: 194px;
+}
+
+.bookBtn:hover .linkBtn {
+    margin-left: 0px;
+}

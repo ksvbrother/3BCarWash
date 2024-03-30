@@ -1,0 +1,34 @@
+.whyImage {
+    width: 80px;
+    height: 80px;
+}
+
+.whyItem {
+    height: 300px;
+    background-color: #f3f3f4;
+    border-radius: 25px;
+}
+
+.whyHeading {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.whyText {
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.whySubText {
+    max-width: 800px;
+}
+
+@media screen and (max-width:425px) {
+    .whySubText {
+        font-size: 13px;
+    }
+}

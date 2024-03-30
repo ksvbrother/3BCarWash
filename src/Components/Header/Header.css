@@ -1,0 +1,71 @@
+@import url('../../App.css');
+
+.headerContainer {
+    background-color: #fff;
+    z-index: 999;
+}
+
+.bannerImage {
+    width: 125px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.headerLink {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.headerLink.active {
+    color: var(--primary-color);
+}
+
+.mobileIcon {
+    width: 24px;
+    height: 20px;
+}
+
+.mobileNumber {
+    font-family: 'Poppins';
+}
+
+.loginText {
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.registerBtn {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 7px 0px;
+    width: 118px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+@media screen and (max-width:992px) {
+    .headerLink {
+        width: 100%;
+    }
+
+    .mobileFixed {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: left 0.4s linear;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+    }
+
+    .mobileFixed.active {
+        left: 0;
+    }
+
+    .bannerImage {
+        width: 65px;
+        height: 60px;
+    }
+
+}

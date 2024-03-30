@@ -1,0 +1,48 @@
+.bannerContainer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bannerHeading {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.bannerText {
+    font-size: 18px;
+    color: #777;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:425px) {
+    .bannerHeading {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .bannerText {
+        font-size: 13px;
+        color: var(--text-color);
+        margin-top: 24px;
+    }
+
+    .bannerContainer {
+        height: calc(100vh - 200px);
+       
+
+    }
+    .buttonImage {
+       display: none;
+    }
+    .linkBtn {
+        margin-left: 0px;
+        font-size: 13px;
+    }
+    .bookBtn {
+        width: 161px;
+    }
+}
